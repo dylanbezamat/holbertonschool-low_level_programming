@@ -12,3 +12,4 @@ pointers_arrays_strings/5-rev_string
 pointers_arrays_strings/6-puts2
 pointers_arrays_strings/7-puts_half
 pointers_arrays_strings/8-print_array
+pointers_arrays_strings/9-strcpy
