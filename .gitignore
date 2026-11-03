@@ -3,3 +3,4 @@ benchmarking/comparison_algorithms
 benchmarking/instrumentation_lab
 pointers_arrays_strings/0-98
 pointers_arrays_strings/*-main.c
+pointers_arrays_strings/1-swap
