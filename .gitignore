@@ -9,3 +9,4 @@ pointers_arrays_strings/3-puts
 pointers_arrays_strings/_putchar.c
 pointers_arrays_strings/4-print_rev
 pointers_arrays_strings/5-rev_string
+pointers_arrays_strings/6-puts2
