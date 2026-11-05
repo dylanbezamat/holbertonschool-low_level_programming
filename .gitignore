@@ -17,3 +17,4 @@ pointers_arrays_strings/100-atoi
 pointers_arrays_strings/0-strcat
 pointers_arrays_strings/1-strncat
 pointers_arrays_strings/2-strncpy
+pointers_arrays_strings/3-strcmp
