@@ -24,3 +24,4 @@ pointers_arrays_strings/6-cap
 pointers_arrays_strings/*.o
 pointers_arrays_strings/7-1337
 pointers_arrays_strings/0-memset
+pointers_arrays_strings/1-memcpy
