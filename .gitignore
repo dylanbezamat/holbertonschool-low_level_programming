@@ -30,3 +30,4 @@ pointers_arrays_strings/3-strspn
 pointers_arrays_strings/4-strpbrk
 pointers_arrays_strings/5-strstr
 pointers_arrays_strings/7-print_chessboard
+pointers_arrays_strings/8-print_diagsums
