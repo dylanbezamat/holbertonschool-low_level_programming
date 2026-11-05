@@ -26,3 +26,4 @@ pointers_arrays_strings/7-1337
 pointers_arrays_strings/0-memset
 pointers_arrays_strings/1-memcpy
 pointers_arrays_strings/2-strchr
+pointers_arrays_strings/3-strspn
