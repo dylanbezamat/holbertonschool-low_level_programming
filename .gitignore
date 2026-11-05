@@ -15,3 +15,4 @@ pointers_arrays_strings/8-print_array
 pointers_arrays_strings/9-strcpy
 pointers_arrays_strings/100-atoi
 pointers_arrays_strings/0-strcat
+pointers_arrays_strings/1-strncat
