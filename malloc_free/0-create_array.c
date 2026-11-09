@@ -1,8 +1,30 @@
-echo "# C - malloc, free" > README.md
-git add .
-git commit -m "Add 0-create_array.c"
-git push
-git status
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * create_array - creates an array of chars and initializes it with a char
+ * @size: size of the array
+ * @c: char used to initialize the array
+ *
+ * Return: pointer to the array, or NULL if size is 0 or if it fails
+ */
+char *create_array(unsigned int size, char c)
+{
+	char *array;
+	unsigned int i;
+
+	if (size == 0)
+		return (NULL);
+
+	array = malloc(sizeof(char) * size);
+	if (array == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		array[i] = c;
+
+	return (array);
+}
 
 
 
