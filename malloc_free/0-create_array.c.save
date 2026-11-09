@@ -1,0 +1,11 @@
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-create_array.c -o a
+./a
+git add .
+git commit -m "Add 0-create_array.c"
+git push
+cd ~/holbertonschool-low_level_programming
+mkdir -p malloc_free
+cd malloc_free
+nano 0-create_array.c
+
+
