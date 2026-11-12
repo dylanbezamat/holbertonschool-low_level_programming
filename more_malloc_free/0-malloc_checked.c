@@ -16,5 +16,4 @@ void *malloc_checked(unsigned int b)
 		exit(98);
 
 	return (p);
-}   ls
-   cat 0-malloc_checked.c
+}
