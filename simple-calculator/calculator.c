@@ -10,17 +10,43 @@ void print_menu(void)
 }
 
 /**
- * main - simple calculator skeleton
+ * clear_input - discards the rest of the line typed by the user
+ */
+void clear_input(void)
+{
+	int c;
+
+	c = getchar();
+	while (c != 10 && c != EOF)
+		c = getchar();
+}
+
+/**
+ * main - simple calculator menu loop
  *
  * Return: Always 0
  */
 int main(void)
 {
 	int choice;
+	int res;
 
 	printf("Simple Calculator\n");
-	print_menu();
-	if (scanf("%d", &choice) == 1 && choice == 0)
-		printf("Bye!\n");
+	while (1)
+	{
+		print_menu();
+		res = scanf("%d", &choice);
+		if (res == EOF)
+			break;
+		clear_input();
+		if (res != 1 || choice < 0 || choice > 4)
+		{
+			printf("Invalid choice\n");
+			continue;
+		}
+		if (choice == 0)
+			break;
+	}
+	printf("Bye!\n");
 	return (0);
 }
