@@ -80,6 +80,10 @@ int main(void)
 			printf("Result: %d\n", a - b);
 		else if (choice == 3)
 			printf("Result: %d\n", a * b);
+		else if (b == 0)
+			printf("Error: division by zero\n");
+		else
+			printf("Result: %g\n", (double)a / b);
 	}
 	printf("Bye!\n");
 	return (0);
