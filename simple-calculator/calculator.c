@@ -22,6 +22,30 @@ void clear_input(void)
 }
 
 /**
+ * read_number - asks for a number until the user types a valid one
+ * @prompt: the text to print before reading
+ *
+ * Return: the number typed, or 0 if there is no more input
+ */
+int read_number(char *prompt)
+{
+	int n;
+	int res;
+
+	while (1)
+	{
+		printf("%s", prompt);
+		res = scanf("%d", &n);
+		if (res == EOF)
+			return (0);
+		clear_input();
+		if (res == 1)
+			return (n);
+		printf("Invalid number\n");
+	}
+}
+
+/**
  * main - simple calculator menu loop
  *
  * Return: Always 0
@@ -30,6 +54,8 @@ int main(void)
 {
 	int choice;
 	int res;
+	int a;
+	int b;
 
 	printf("Simple Calculator\n");
 	while (1)
@@ -46,6 +72,10 @@ int main(void)
 		}
 		if (choice == 0)
 			break;
+		a = read_number("A: ");
+		b = read_number("B: ");
+		if (choice == 1)
+			printf("Result: %d\n", a + b);
 	}
 	printf("Bye!\n");
 	return (0);
