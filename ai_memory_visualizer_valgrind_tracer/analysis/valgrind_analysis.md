@@ -97,3 +97,9 @@ The other order would read `p->name` after `free(p)`: a use-after-free.
 ## AI usage
 I used an AI assistant (Claude) to help interpret the Valgrind output.
 I checked every explanation against the code, the Valgrind output and my task 0 memory maps, and corrected the errors above.
+
+## Ownership in heap_example.c
+`person_new` allocates two blocks: the `Person` struct (line 14) and its `name` (line 21).
+It returns the struct, so the caller (`main`) becomes the owner of **both** blocks.
+The struct owns its `name`: whoever frees a `Person` must free `name` first, then the struct.
+`person_free_partial` breaks this rule, which is why `alice->name` leaks.
